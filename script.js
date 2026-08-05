@@ -112,3 +112,20 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 });
+
+console.log("MENU SCRIPT CARREGADO");
+
+const botao = document.getElementById("menu-toggle");
+const menu = document.querySelector(".navbar");
+
+if(botao){
+
+botao.onclick = function(){
+
+console.log("CLIQUE NO MENU");
+
+menu.classList.toggle("active");
+
+}
+
+}
