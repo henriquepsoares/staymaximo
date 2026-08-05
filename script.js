@@ -89,3 +89,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+
+// Fecha o menu ao clicar na logo
+const logo = document.querySelector(".logo");
+
+if (logo) {
+    logo.addEventListener("click", function () {
+        navbar.classList.remove("active");
+
+        const icon = menuToggle.querySelector("i");
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+    });
+}
