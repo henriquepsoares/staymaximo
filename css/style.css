@@ -1474,3 +1474,38 @@ a,
 }
 
 }
+
+.mobile-menu{
+    display:block !important;
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+    z-index:99999;
+}
+
+
+.navbar{
+    transition:0.4s;
+}
+
+
+@media(max-width:1100px){
+
+.navbar{
+    display:block !important;
+    position:fixed;
+    top:0;
+    right:-100%;
+    width:80%;
+    height:100vh;
+    background:#06182C;
+    padding:100px 40px;
+    z-index:9999;
+}
+
+
+.navbar.active{
+    right:0;
+}
+
+}
