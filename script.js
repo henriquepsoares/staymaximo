@@ -4,77 +4,111 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const languageSelect = document.getElementById("languageSelect");
 
-    if (!languageSelect) return;
+    if (languageSelect) {
+
+        languageSelect.addEventListener("change", function () {
+
+            const language = this.value;
 
 
-    languageSelect.addEventListener("change", function () {
+            localStorage.setItem(
+                "staymaximo_language",
+                language
+            );
 
-        const language = this.value;
+
+            console.log(
+                "Idioma selecionado:",
+                language
+            );
 
 
-        localStorage.setItem(
-            "staymaximo_language",
-            language
+        });
+
+
+
+        // recuperar idioma salvo
+
+        const savedLanguage = localStorage.getItem(
+            "staymaximo_language"
         );
 
 
-        // futura ligação com arquivos de tradução
-        console.log(
-            "Idioma selecionado:",
-            language
-        );
+        if(savedLanguage){
 
+            languageSelect.value = savedLanguage;
 
-    });
-
-
-
-    // recuperar idioma salvo
-
-    const savedLanguage = localStorage.getItem(
-        "staymaximo_language"
-    );
-
-
-    if(savedLanguage){
-
-        languageSelect.value = savedLanguage;
+        }
 
     }
 
 
 });
 
+
+
+
+// StayMaximo - Language Dropdown Mobile/Desktop
+
 document.addEventListener("DOMContentLoaded", function(){
 
 
-const languageButton = document.querySelector(".language-selector button");
+    const languageButton = document.querySelector(".language-selector button");
 
-const languageBox = document.querySelector(".language-selector");
-
-
-if(languageButton){
+    const languageBox = document.querySelector(".language-selector");
 
 
-languageButton.addEventListener("click", function(e){
+    if(languageButton && languageBox){
 
-    e.stopPropagation();
 
-    languageBox.classList.toggle("active");
+        languageButton.addEventListener("click", function(e){
+
+            e.stopPropagation();
+
+            languageBox.classList.toggle("active");
+
+        });
+
+
+
+        document.addEventListener("click", function(){
+
+            languageBox.classList.remove("active");
+
+        });
+
+
+    }
+
 
 });
 
 
-}
 
 
+// StayMaximo - Mobile Menu
 
-document.addEventListener("click", function(){
+document.addEventListener("DOMContentLoaded", function(){
 
-    languageBox.classList.remove("active");
 
-});
+    const menuToggle = document.getElementById("menu-toggle");
 
+    const navbar = document.querySelector(".navbar");
+
+
+    if(menuToggle && navbar){
+
+
+        menuToggle.addEventListener("click", function(){
+
+
+            navbar.classList.toggle("active");
+
+
+        });
+
+
+    }
 
 
 });
