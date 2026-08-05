@@ -2055,3 +2055,22 @@ font-size:14px;
 
 
 }
+
+/* OWNER PAGE HERO IMAGE */
+
+.owner-page-hero{
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.45)
+    ),
+
+    url('../images/proprietarios/hero.jpg');
+
+    background-size:cover;
+
+    background-position:center;
+
+}
