@@ -1,76 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portal do Proprietário | StayPolo Canarias</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
 <section class="owner-login">
+
 
 <div class="login-box">
 
-<img src="images/logo.png" alt="StayMaximo">
 
-
-<span class="login-subtitle">
-OWNER PORTAL
-</span>
+<img src="images/logo.png" alt="StayFlow Canarias">
 
 
 <h1>
-Welcome Back
+Portal do Proprietário
 </h1>
 
 
 <p>
-Access your property dashboard, reservations and earnings.
+Acompanhe reservas, rendimentos e o desempenho do seu alojamento.
 </p>
 
 
 
-<form>
+<form action="login.php" method="POST">
 
 
-<div class="login-input">
-
-<i class="fa-solid fa-envelope"></i>
 
 <input 
-type="email"
-placeholder="Email address"
+type="email" 
+name="email"
+placeholder="Email"
 required>
 
-</div>
 
-
-
-<div class="login-input">
-
-<i class="fa-solid fa-lock"></i>
 
 <input 
-type="password"
-placeholder="Password"
+type="password" 
+name="senha"
+placeholder="Senha"
 required>
 
-</div>
 
 
 
-<button class="btn-primary">
+<button type="submit" class="btn-primary">
 
-<i class="fa-solid fa-arrow-right-to-bracket"></i>
-
-Login
+Entrar
 
 </button>
+
 
 
 </form>
 
 
 
-<div class="login-links">
+<br>
 
-<a href="#">
-Forgot password?
+
+
+<a href="esqueci_senha.html">
+
+Esqueci minha senha
+
 </a>
-
-
-</div>
 
 
 
@@ -78,3 +86,9 @@ Forgot password?
 
 
 </section>
+
+
+
+</body>
+
+</html>
