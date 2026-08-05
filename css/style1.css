@@ -1658,3 +1658,30 @@ a,
 
 
 }
+
+.owner-hero{
+
+    min-height:85vh;
+
+    padding-top:90px;
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,.55),
+    rgba(0,0,0,.55)
+    ),
+
+    url('../images/proprietarios/hero.jpg');
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    align-items:center;
+
+    position:relative;
+
+}
