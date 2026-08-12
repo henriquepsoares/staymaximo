@@ -316,3 +316,83 @@ nav a:hover.top-btn,
     font-size:17px;
   }
 }
+
+
+
+/* MENU PRINCIPAL - TAMANHO MAIOR */
+nav {
+  display: flex;
+  gap: 24px;
+  font-size: 14px;
+  align-items: center;
+}
+
+nav a {
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.top-btn,
+nav a.top-btn,
+.btn {
+  font-size: 14px;
+  padding: 13px 20px;
+  font-weight: 800;
+}
+
+/* MENU NO TELEMÓVEL */
+@media (max-width: 900px) {
+  nav {
+    font-size: 15px;
+    gap: 0;
+  }
+
+  nav a {
+    font-size: 15px;
+    padding: 10px 0;
+  }
+}
+
+
+
+/* RODAPÉ - TEXTO MAIOR */
+footer {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+footer b {
+  font-size: 18px;
+}
+
+footer strong {
+  font-size: 14px;
+}
+
+footer small {
+  font-size: 12px;
+}
+
+footer a {
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  footer {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  footer b {
+    font-size: 18px;
+  }
+
+  footer strong {
+    font-size: 14px;
+  }
+
+  footer small {
+    font-size: 12px;
+  }
+}
